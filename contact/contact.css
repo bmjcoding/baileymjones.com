@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+ 
+  .content {
+    background:rgba(0, 0, 0, 0.90);
+    border-style: solid;
+    border-color: rgba(30, 30, 30, 0.3);
+    border-width: 5px;
+    max-width:1200px;
+    max-height:550px;
+    height:75vh;
+    position: relative;
+    z-index: 1;
+  }
+  .email img {
+    display: block;
+    margin-top:50px;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-size: contain;
+  }
+  .email a {
+    color: rgb(225, 225, 225); 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:1px;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+    z-index:1;
+    letter-spacing: 1px;
+    opacity: 1;
+    text-decoration: none;
+  }
+  h1{
+    color: rgb(225, 225, 225); 
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:1px;
+    font-size: 40px;
+    text-align: center;
+    overflow: hidden;
+    z-index:1;
+    letter-spacing: 1px;
+    opacity: 1;
+  }
+  .phone img {
+    display: block;
+    margin-top:60px;
+    margin-bottom:20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:175px;
+    width: 65px;
+    border-radius: 2px;
+    color: #ffffff;
+    background-size: contain;
+  }
