@@ -1,0 +1,194 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*background*/
+body {
+  font-family: sans-serif;
+  background:url(https://s3.amazonaws.com/baileymjones.com/images/background.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+}
+
+/*margins for page*/
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:25px;
+}
+
+/*navbar*/
+.navbar ul {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.192);
+  border-width: 5px;
+  box-shadow: 2px 2px 20px #008cff67;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background:#111111f1;
+  position: relative;
+  z-index: 10;
+}
+
+/*navbar text*/
+.navbar a { 
+  color: #2b2b2b;
+  text-shadow: 1px 1px 1px #111111,
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding:25px 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*brackets on hover*/
+.brackets a:before, .brackets a:after
+{
+  opacity: 0;
+  color:#0000ff;
+  transition: all 1s;
+  padding-left:5px;
+  padding-right:5px;
+}
+.brackets a:before
+{
+  content: '<';
+}
+.brackets a:after
+{
+  content: '/>';
+}
+.brackets a:hover:before, .brackets a:hover:after
+{
+  opacity: 1;
+  color:#2eccfa;
+}
+.active
+{
+  border-style: solid;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 38, 255, 0.75);
+}
+
+/*dropdown menu on hover*/
+.dropdown {
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #1111117a;
+border-style: solid;
+border-top-color: rgba(0, 0, 0, 0);
+border-left-color: rgba(0, 0, 0, 0.295);
+border-right-color: rgba(0, 0, 0, 0.295);
+border-bottom-color: rgba(0, 0, 0, 0.295);
+border-width: 5px;
+width:12.7rem;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+font-size:15px;
+color: #8b8b8b;
+text-shadow: 1px 1px 1px #111111,
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 3px 5px rgba(0,0,0,.2),
+           0 5px 10px rgba(0,0,0,.25);
+padding: 12px 16px;
+border-bottom: rgb(0, 50, 212); border-width: 1px; border-style: solid;
+border-top-color: rgba(0, 0, 0, 0);
+border-left-color: rgba(0, 0, 0, 0);
+border-right-color: rgba(0, 0, 0, 0);
+text-decoration: none;
+display: block;
+text-align: center;
+}
+
+.dropdown-content a:hover {
+background-color: rgba(0, 174, 255, 0.418);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/*center logo*/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:75px;
+}
+
+/*not sure*/
+.navbar li {
+  flex: 3;
+}
+.navbar .logo {
+  flex: 3;
+}
+
+/*footer*/
+.footer {
+  background-color: #252525;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding:8px;
+  height: 45px;
+  text-align: left;
+  font: normal 16px sans-serif;
+}
+
+.footer .footer-text b {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.footer .footer-social {
+  float: right;
+}
+
+.footer .footer-social img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  color: #ffffff;
+  transition:all .25s;
+  background-size: contain;
+  margin-left:5px;
+}

@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+ 
+  .content {
+    background:rgba(0, 0, 0, 0.90);
+    border-style: solid;
+    border-color: rgba(30, 30, 30, 0.3);
+    border-width: 5px;
+    max-width:1200px;
+    max-height:750px;
+    height:75vh;
+    position: relative;
+    z-index: 1
+  }
+  .landingpage {
+    background-image: url("https://s3.amazonaws.com/baileymjones.com/images/landingpage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:100%;
+    height:100%;
+    position: relative;
+    z-index: 2
+  }
+  
+  h1{
+    color: lime; 
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 5s steps(60, end); 
+    position:relative;
+    z-index:1;
+    letter-spacing: 1px;
+  }
+
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+
+  p{
+    color: rgb(255, 255, 255); 
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    position:relative;
+    z-index:1;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 5s fadeIn;
+    animation-fill-mode: forwards;
+    transition-delay: 2.5s !important;
+    -webkit-animation: 5s fadeIn;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition-delay: 2.5s !important;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity:1;
+    }
+  }
+  
+  span{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+

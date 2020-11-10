@@ -1,0 +1,50 @@
+/*@media queries for iPhones 6-12 Pro Max*/
+
+.safari{
+    display: none;
+    font-size: 20px;
+    margin-top:10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+  }
+  .safari a{
+    color: rgb(255, 72, 0);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} }
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} }
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} } 
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) { .safari{display:block} }
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} }
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} }
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-device-pixel-ratio: 2) { .safari{display:block} }
+@media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-device-pixel-ratio: 3) { .safari{display:block} }
+  
+   
